@@ -1,0 +1,85 @@
+@import "./variable";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap");
+.ct-form {
+  .ct-form-a {
+    padding: 10px;
+    border-radius: 5px;
+    height: 40px;
+  }
+}
+.ct-message {
+  color: black;
+  h3 {
+    font-size: 40px;
+    font-weight: 200;
+    i {
+      font-size: 40px;
+      font-weight: bold;
+      font-family: italic;
+    }
+  }
+  .ct-send-email {
+    background: #fff;
+    width: 165px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid $colorText;
+    p {
+      font-size: 17px;
+      font-weight: 400;
+      margin-top: 5px;
+      text-align: center;
+      color: $colorText;
+    }
+    &:hover {
+      background: $colorText;
+      p {
+        color: white;
+      }
+    }
+  }
+}
+.ct-information {
+  color: black;
+  h3 {
+    font-size: 40px;
+    font-weight: 200;
+    i {
+      font-size: 40px;
+      font-weight: bold;
+      font-family: italic;
+    }
+  }
+  h5 {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: $colorText;
+  }
+  p {
+    a {
+      text-decoration: none;
+      color: $colorText;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.one-second .column {
+  width: 48%;
+}
+.wpcf7-form .column {
+  margin-bottom: 10px;
+}
+.column,
+.columns {
+  float: left;
+  margin: 0px 1%;
+}
+span.wpcf7-form-control-wrap {
+  width: 100%;
+  position: relative !important;
+  display: inline-block;
+  margin-bottom: 3px;
+}

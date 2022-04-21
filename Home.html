@@ -1,6 +1,16 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="./css/app.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"
@@ -22,31 +32,29 @@
       integrity="sha512-6wXFd1TrY1aTBRF9907pk+2I5dBRYyi6OYkcuLgD+g4aYdieY8z/3Of0eklpgAz3ykJUkTEMsVRufL6BtCbgYA=="
       crossorigin="anonymous"
     ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js"
-      integrity="sha512-yiGU7wGL2gatZdtlmCrEf4p+0rr5wA2eRZBxa9Amu4/ASYM5CQj/92HNYTqHR4s+5xk6cgCiZIpoCTVJqA0rAQ=="
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+      integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
       crossorigin="anonymous"
     ></script>
     <script>
       $(function () {
         $("#header").load("./include/header.html");
         $("#footer").load("./include/footer.html");
-        $("#ForHer").load("./html/ForHer.html");
         $("#fixed").load("./include/fixed.html");
+        $("#ForHer").load("./html/ForHer.html");
+        $("#ContactUS").load("./html/ContactUS.html");
+        $("#blog").load("./html/blog.html");
       });
     </script>
+    <link rel="stylesheet" href="./css/app.css" />
   </head>
   <body style="overflow-x: hidden">
     <!-- <div id="header"></div> -->
-    <div id="ForHer"></div>
-    <div id="footer"></div>
-    <div id="fixed"></div>
+    <!-- <div id="ForHer"></div> -->
+    <!-- <div id="fixed"></div> -->
+    <!-- <div id="ContactUS"></div> -->
+    <div id="blog"></div>
+    <!-- <div id="footer"></div> -->
   </body>
 </html>
