@@ -1,0 +1,122 @@
+.subheader-blog {
+  padding: 30px 0px;
+  background-color: rgba(247, 247, 247, 1);
+  box-shadow: 1px 1px 4px 0px #dcdcdc;
+  h2 {
+    color: gray;
+    padding: 0;
+    margin-top: 10px;
+  }
+  .bl-top {
+    display: flex;
+    justify-content: space-between;
+    h3 {
+      font-weight: 200;
+      font-size: 25px;
+      color: gray;
+      margin: unset;
+    }
+    a {
+      color: gray;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+/* Style the tab */
+.tab {
+  padding-top: 20px;
+  overflow: hidden;
+  background-image: url(../img/stripes_5_b.png);
+  padding: unset;
+  height: 51px;
+}
+
+/* Style the buttons inside the tab */
+.tab li {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  list-style: none;
+  a {
+    font-size: 16px;
+    color: $colorText;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    i {
+      padding: 0px 6px;
+    }
+  }
+}
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  border-top: none;
+}
+.filters_wrapper {
+  .categories {
+    display: flex;
+    list-style: none;
+    padding: unset;
+    margin: unset;
+    .blahaha {
+      padding: unset;
+      display: inline-block;
+      margin: 1%;
+      width: 18%;
+      height: 37px;
+      background: #fff;
+      a {
+        display: block;
+        padding: 7px 10px;
+        color: #858585;
+      }
+      &:hover {
+        background: $colorText;
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.bl-close {
+  width: 40px !important;
+  background: grey !important;
+  &:hover {
+    background: $colorText !important;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .tab li {
+    padding: 0px 4px;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .bl-hehe {
+    display: none;
+  }
+  .tab li a {
+    font-size: 13px;
+  }
+  .bl-top-text-hehehe {
+    font-size: 13px !important;
+  }
+  .blahaha {
+    width: 45% !important;
+  }
+  .bl-close {
+    width: 35px !important;
+    height: 35px !important;
+    padding-left: 0px !important;
+  }
+}

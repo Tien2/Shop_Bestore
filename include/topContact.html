@@ -1,0 +1,129 @@
+<div class="subheader-blog">
+  <div class="container">
+    <div class="bl-top">
+      <h3>Blog</h3>
+      <div>
+        <a class="margin-right:30px" href="#"
+          >Home
+          <i style="margin: 0px 10px" class="fa-solid fa-chevron-right"></i
+        ></a>
+        <a style="text-decoration: none" href="#">Blog</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <ul class="tab" style="margin: 30px 0px">
+    <li class="bl-hehe" style="color: gray">Filter by</li>
+    <li class="tablinks" onclick="openCity(event, 'Categories')">
+      <a href="#"
+        ><i class="fa-solid fa-file-lines"></i>Categories<i
+          class="fa-solid fa-caret-down"
+        ></i
+      ></a>
+    </li>
+    <li class="tablinks" onclick="openCity(event, 'Tags')">
+      <a href="#"
+        ><i class="fa-solid fa-tag"></i> Tags<i
+          class="fa-solid fa-caret-down"
+        ></i
+      ></a>
+    </li>
+    <li class="tablinks" onclick="openCity(event, 'Authors')">
+      <a href="#"
+        ><i class="fa-solid fa-user"></i>Authors<i
+          class="fa-solid fa-caret-down"
+        ></i
+      ></a>
+    </li>
+    <li style="float: right">
+      <a
+        class="bl-top-text-hehe"
+        style="font-size: 17px; font-weight: 400"
+        href="#"
+        >x Show all</a
+      >
+    </li>
+  </ul>
+  <div class="bl-tab">
+    <div id="Categories" class="tabcontent">
+      <div class="filters_wrapper">
+        <ul class="row categories">
+          <li class="col-12 blahaha">
+            <a data-rel=".category-news">News</a>
+          </li>
+          <li class="col-12 blahaha">
+            <a data-rel=".category-subjects">Subjects</a>
+          </li>
+          <li class="col-12 blahaha bl-close">
+            <a href="#"
+              ><i
+                style="color: #fff; padding-left: 3px"
+                class="fa-solid fa-xmark"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="Tags" class="tabcontent">
+      <div class="filters_wrapper">
+        <ul class="row categories">
+          <li class="col-6 col-lg-2 blahaha">
+            <a data-rel=".category-news">Design</a>
+          </li>
+          <li class="col-6 col-lg-2 blahaha">
+            <a data-rel=".category-subjects">Framework</a>
+          </li>
+          <li class="col-6 col-lg-2 blahaha">
+            <a data-rel=".category-news">Grid</a>
+          </li>
+          <li class="col-6 col-lg-2 blahaha">
+            <a data-rel=".category-news">Motion</a>
+          </li>
+          <li class="col-6 col-lg-2 blahaha">
+            <a data-rel=".category-news">Themeforest</a>
+          </li>
+          <li class="col-6 col-lg-2 blahaha">
+            <a data-rel=".category-news">Video</a>
+          </li>
+          <li class="col-6 col-lg-2 blahaha">
+            <a data-rel=".category-news">Wordpress</a>
+          </li>
+          <li class="col-6 col-lg-2 blahaha bl-close">
+            <a href="#"
+              ><i
+                style="color: #fff; padding-left: 3px"
+                class="fa-solid fa-xmark"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="Authors" class="tabcontent">
+      <div class="filters_wrapper">
+        <ul class="categories">
+          <li class="blahaha">
+            <a data-rel=".category-news">Admin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+</script>

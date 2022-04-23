@@ -1,0 +1,94 @@
+.logo{
+    text-align: center;
+    margin: 0;
+    padding: 0 30px;
+    border-bottom: 1px solid;
+    height: 120px;
+    .logo_img{
+        height:60px;
+        padding: 30px 0;
+    }
+}
+.naviagtion{
+    .nav{
+        text-align: center;
+        .main-menu{
+            display: flex;
+            list-style: none;
+            .menu-item{
+                padding : 0 20px 0 20px;
+                .nav-item{
+                    color: black;
+                    line-height: 60px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    letter-spacing: 2px;
+                }
+                .menu-lv1{ display: none !important;
+                   position: absolute;
+                   text-align: start;
+                   list-style:  none;
+                    display: flex;
+                    width: 1075.6px;
+                    background-color: #f3f3f3;
+                    left:0px;
+                    li a{
+                        display: block;
+                        padding: 10px 20px;
+                    }
+                    .menu-lv2{
+                        padding: 0px;
+                        list-style: none;
+                        left: auto;
+                        li a{
+                            display: block;
+                            padding: 10px 20px;
+                        }
+                    }
+                    }
+                }
+                .nav-bg{
+                    padding: 20px 166px 20px 20px;
+                    background-image: url(https://themes.muffingroup.com/be/store/wp-content/uploads/2015/03/home_store_megamenu_her.jpg);
+                    background-repeat: no-repeat;
+                    background-position: right bottom;
+                }
+            }
+        }
+    }
+
+.top_bar{
+    position: absolute;
+    height:60px;
+    bottom:0px;
+    right:0px;
+    .header_cart{
+        margin-right:5px;
+            span{
+                position: relative;
+                right:2px;
+                bottom: 9px;
+                display: inline-block;
+                background-color: #a4916d;
+                width:15px;
+                text-align: center;
+                border-radius: 3px;
+                color:white;
+                font-size: 12px;
+            }
+            i{
+                color:#a4916d;
+                font-size: 22px;
+            }
+        
+    }
+    .search_button{
+        i{
+            color:#a4916d;
+            font-size: 22px;
+        }
+    }
+}
+@media only screen and (max-width: 1025px) {
+ 
+  }

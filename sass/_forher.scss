@@ -108,36 +108,40 @@
 }
 // CSS NEXT PAGE
 .fh-next-page {
-  background-image: url(../img/stripes_5_b.png);
-  .page {
-    color: $colorText;
-    width: 40px;
-    height: 40px;
-    background: #fff;
-    border: 2px solid $colorText;
-    border-radius: 4px;
-    text-align: center;
-    p {
-      padding-top: 6px;
+  .next-page {
+    display: flex;
+    justify-content: center;
+    .page {
+      color: $colorText;
+      width: 40px;
+      height: 40px;
+      background: #fff;
+      border: 2px solid $colorText;
+      border-radius: 4px;
+      text-align: center;
+      p {
+        padding-top: 6px;
+      }
     }
-  }
-  .page_a {
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    background: #fff;
-    border: 2px solid $colorText;
-    border-radius: 4px;
-    text-align: center;
-    p {
-      padding-top: 6px;
-      color: gray;
-    }
-  }
-  .page_a:hover {
-    background: $colorText;
-    p {
+    .page_a {
+      background-image: url(../img/stripes_5_b.png);
       color: #fff;
+      width: 40px;
+      height: 40px;
+      background: #fff;
+      border: 2px solid $colorText;
+      border-radius: 4px;
+      text-align: center;
+      p {
+        padding-top: 6px;
+        color: gray;
+      }
+    }
+    .page_a:hover {
+      background: $colorText;
+      p {
+        color: #fff;
+      }
     }
   }
 }
@@ -168,7 +172,6 @@
   }
 }
 .fh_checkout {
-  margin-left: 20px;
   color: $colorText;
   width: 150px;
   height: 60px;
@@ -326,4 +329,42 @@ input[type="range"]::-moz-range-thumb {
   pointer-events: auto;
   -moz-appearance: none;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+.fh1 {
+  padding: unset !important;
+}
+
+// MEDIA MOBILE - IPAD - IPAD MINI
+@media only screen and (max-width: 600px) {
+  .payment {
+    h6 {
+      font-size: 10px !important;
+    }
+    a {
+      font-size: 9px !important;
+    }
+  }
+}
+@media only screen and (max-width: 376px) {
+  .item {
+    padding: 0px 33px;
+  }
+  .shop-filters {
+    padding: unset;
+    margin: 10px 0px;
+    padding: 0px 33px;
+    display: block;
+    span {
+      text-align: center;
+    }
+    #option {
+      align-items: center;
+      height: 30px;
+      padding-right: 0px;
+      margin-left: 50px;
+    }
+  }
+  .fh2 {
+    padding: 0px 33px !important;
+  }
 }

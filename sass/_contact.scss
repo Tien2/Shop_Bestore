@@ -1,5 +1,7 @@
 @import "./variable";
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Playfair+Display:wght@400;500&display=swap");
+
 .ct-form {
   .ct-form-a {
     padding: 10px;
@@ -7,13 +9,21 @@
     height: 40px;
   }
 }
+.grid-bt {
+  padding: unset;
+  .grid-bt-ct {
+    padding: unset;
+  }
+}
 .ct-message {
   color: black;
+  margin: 0px 10px;
   h3 {
-    font-size: 40px;
-    font-weight: 200;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: "Lato", sans-serif;
     i {
-      font-size: 40px;
+      font-size: 30px;
       font-weight: bold;
       font-family: italic;
     }
@@ -42,10 +52,11 @@
 .ct-information {
   color: black;
   h3 {
-    font-size: 40px;
-    font-weight: 200;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: "Lato", sans-serif;
     i {
-      font-size: 40px;
+      font-size: 30px;
       font-weight: bold;
       font-family: italic;
     }
@@ -53,7 +64,7 @@
   h5 {
     font-family: "Playfair Display", serif;
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 500;
     color: $colorText;
   }
   p {
@@ -82,4 +93,36 @@ span.wpcf7-form-control-wrap {
   position: relative !important;
   display: inline-block;
   margin-bottom: 3px;
+}
+@media only screen and (max-width: 376px) {
+  .ContactUS {
+    padding: 0px 33px !important;
+  }
+  .ct-aha {
+    padding: 0px 11px;
+  }
+  .ct-message {
+    padding-bottom: 20px;
+    margin: unset;
+    h3 {
+      font-size: 20px;
+      i {
+        font-size: 20px;
+      }
+    }
+  }
+  .ct-information {
+    h3 {
+      font-size: 20px;
+      i {
+        font-size: 20px;
+      }
+    }
+    h5 {
+      font-size: 13px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
 }
