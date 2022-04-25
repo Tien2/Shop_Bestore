@@ -1,9 +1,9 @@
-<div id="cart" style="background: #f8f8f8">
+<div class="cart" style="height: 100%; width: 100%">
   <div class="subheader-fh">
     <div class="container">
       <div class="fhtop">
         <h3>Cart</h3>
-        <div>
+        <div class="mobile-unset">
           <a class="margin-right:30px" href="#"
             >Home
             <i style="margin: 0px 10px" class="fa-solid fa-chevron-right"></i
@@ -14,37 +14,295 @@
     </div>
   </div>
   <div class="container">
-    <div class="cart">
-      <table>
-        <tr>
-          <th></th>
-          <th>Product</th>
-          <th>Price</th>
-          <th>Quantity</th>
-          <th>Subtotal</th>
-          <th></th>
+    <div class="cart-table">
+      <!-- TABLE KHÔNG REPOSIVE -->
+      <!-- <table class="table-cart">
+        <tr class="header-table">
+          <th class="hdtable-unset">
+            <div></div>
+          </th>
+          <th class="hdtable-product">
+            <p>Product</p>
+          </th>
+          <th class="hdtable-price">
+            <p>Price</p>
+          </th>
+          <th class="hdtable-quantity">
+            <p>Quantity</p>
+          </th>
+          <th class="hdtable-subtotal">
+            <p>Subtotal</p>
+          </th>
+          <th class="hdtable-unset2">
+            <div></div>
+          </th>
         </tr>
-        <tr>
-          <td>January</td>
-          <td>$100</td>
-          <td>$100</td>
-          <td>$100</td>
-          <td>$100</td>
-          <td>$100</td>
+        <tr class="body-table" style="border-bottom: 1px solid #e8e8e8">
+          <td class="tbbody-thumble">
+            <a href="#">
+              <img
+                class="cart-table-img"
+                src="../img/img_forher/home_store_product5-700x700.jpg"
+                alt=""
+              />
+            </a>
+          </td>
+          <td class="tbbody-product"><a href="#">Flying Ninja</a></td>
+          <td class="tbbody-price">
+            <p>£12.00</p>
+          </td>
+          <td class="tbbody-quantity">
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              min="1"
+              max="5"
+            />
+          </td>
+          <td class="tbbody-subtotal">
+            <p>£12.00</p>
+          </td>
+          <td class="tbbody-unset">
+            <div class="tb-unset"><p>x</p></div>
+          </td>
         </tr>
-        <tr>
-          <td>February</td>
-          <td>$80</td>
+        <tr
+          class="body-table"
+          style="border: 1px solid #e8e8e8; background: #f5f5f5"
+        >
+          <td class="tbbody-thumble">
+            <a href="#">
+              <img
+                class="cart-table-img"
+                src="../img/img_cart/home_store_product18-700x700.jpg"
+                alt=""
+              />
+            </a>
+          </td>
+          <td class="tbbody-product"><a href="#">Flying Ninja</a></td>
+          <td class="tbbody-price">
+            <p>£12.00</p>
+          </td>
+          <td class="tbbody-quantity">
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              min="1"
+              max="5"
+            />
+          </td>
+          <td class="tbbody-subtotal">
+            <p>£12.00</p>
+          </td>
+          <td class="tbbody-unset">
+            <div class="tb-unset"><p>x</p></div>
+          </td>
         </tr>
-        <tr>
-          <td>February</td>
-          <td>$80</td>
-        </tr>
-        <tr>
-          <td>February</td>
-          <td>$80</td>
-        </tr>
+      </table> -->
+      <table class="table">
+        <thead>
+          <tr class="header-table-2">
+            <th></th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody style="border-top: unset">
+          <tr class="body-table-2">
+            <td data-label="">
+              <div class="table-img">
+                <img
+                  src="../img/img_cart/home_store_product15-700x700.jpg"
+                  alt=""
+                />
+              </div>
+            </td>
+            <td data-label="Product:" class="table-product">
+              <a href="#">Flying Ninja</a>
+            </td>
+            <td data-label="Price:" class="table-price"><p>£12.00</p></td>
+            <td data-label="Quantity:" class="table-quantity">
+              <input type="number" min="1" max="5" />
+            </td>
+            <td data-label="Subtotal:" class="table-subtotal">
+              <p>£12.00</p>
+            </td>
+            <td data-label="">
+              <div class="table-ban">
+                <p>x</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="body-table-2">
+            <td data-label="">
+              <div class="table-img">
+                <img
+                  src="../img/img_cart/home_store_product18-700x700.jpg"
+                  alt=""
+                />
+              </div>
+            </td>
+            <td data-label="Product:" class="table-product">
+              <a href="#">Ship Your Idea</a>
+            </td>
+            <td data-label="Price:" class="table-price"><p>£12.00</p></td>
+            <td data-label="Quantity:" class="table-quantity">
+              <input type="number" min="1" max="5" />
+            </td>
+            <td data-label="Subtotal:" class="table-subtotal">
+              <p>£12.00</p>
+            </td>
+            <td data-label="">
+              <div class="table-ban">
+                <p>x</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="body-table-2">
+            <td data-label="">
+              <div class="table-img">
+                <img
+                  src="../img/img_cart/home_store_product15b-700x700.jpg"
+                  alt=""
+                />
+              </div>
+            </td>
+            <td data-label="Product:" class="table-product">
+              <a href="#">Ship Your Idea</a>
+            </td>
+            <td data-label="Price:" class="table-price"><p>£12.00</p></td>
+            <td data-label="Quantity:" class="table-quantity">
+              <input type="number" min="1" max="5" />
+            </td>
+            <td data-label="Subtotal:" class="table-subtotal">
+              <p>£12.00</p>
+            </td>
+            <td data-label="">
+              <div class="table-ban">
+                <p>x</p>
+              </div>
+            </td>
+          </tr>
+          <tr class="body-coupon">
+            <td colspan="6" class="actions">
+              <div class="coupon">
+                <input
+                  type="text"
+                  class="input-text"
+                  placeholder="Coupon code"
+                />
+                <div class="coupon-apply"><p>Apply coupon</p></div>
+              </div>
+              <div class="coupon-update" style="float: right">
+                <p>Update cart</p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
       </table>
+    </div>
+    <div class="row cart-bottom">
+      <div class="col-12 col-lg-6 cart-interested" style="margin-top: 10px">
+        <h3>You may be interested in ...</h3>
+        <ul
+          class="row btl-item"
+          style="list-style: none; padding: unset; margin-top: 30px"
+        >
+          <!-- ẢNH 1 -->
+          <li class="col-12 col-lg-6 ahaha">
+            <div class="forher-body-img">
+              <img
+                class="forher-img"
+                src="../img/img_cart/home_store_product18-700x700.jpg"
+                alt=""
+              />
+              <img
+                class="forher-img top-img"
+                src="../img/img_cart/home_store_product18b-700x700.jpg"
+                alt=""
+              />
+            </div>
+            <div class="forher-body-text">
+              <h4><a>Woo Logo</a></h4>
+              <div class="rate-star">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+              <span class="price">
+                <del aria-hidden="true">
+                  <span class="price-1">
+                    <bdi>
+                      <span class="price-cl">£</span>
+                      20.00
+                    </bdi>
+                  </span>
+                </del>
+                <ins>
+                  <span class="price-2">
+                    <bdi> <span class="price-cl-2">£</span>18.00 </bdi>
+                  </span>
+                </ins>
+              </span>
+            </div>
+          </li>
+          <!-- ẢNH 2 -->
+          <li class="col-12 col-lg-6">
+            <div class="forher-body-img">
+              <img
+                class="forher-img"
+                src="../img/img_cart/home_store_product15-700x700.jpg"
+                alt=""
+              />
+              <img
+                class="forher-img top-img"
+                src="../img/img_cart/home_store_product15b-700x700.jpg"
+                alt=""
+              />
+            </div>
+            <div class="forher-body-text">
+              <h4><a>Woo Logo</a></h4>
+              <div class="rate-star">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <span class="price">
+                <ins>
+                  <span class="price-2">
+                    <bdi> <span class="price-cl-2">£</span>20.00 </bdi>
+                  </span>
+                </ins>
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-6 cart-total" style="margin-top: 10px">
+        <h3>Cart totals</h3>
+        <table style="width: 100%; margin-top: 30px">
+          <tr class="tbbt-rc">
+            <th class="btr-cart-name">Subtotal</th>
+            <td class="btr-cart-pay">82.00</td>
+          </tr>
+          <tr class="tbbt-rc">
+            <th class="btr-cart-name">Total</th>
+            <td class="btr-cart-pay" style="font-weight: bold">82.00</td>
+          </tr>
+        </table>
+        <div class="cbtr-checkout">
+          <h4>Proceed to checkout</h4>
+        </div>
+      </div>
     </div>
   </div>
 </div>

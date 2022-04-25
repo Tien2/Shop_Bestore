@@ -1,0 +1,47 @@
+.next-img-left {
+  position: relative;
+  bottom: 7%;
+  text-decoration: none;
+  display: flex;
+  position: fixed;
+  z-index: 10;
+  .nbuttom {
+    z-index: 5;
+    width: 40px;
+    height: 90px;
+    background: $colorText;
+    i {
+      color: white;
+      margin-top: 30px;
+      margin-left: 15px;
+    }
+  }
+  .nimg {
+    z-index: 5;
+    img {
+      width: 90px;
+      height: 90px;
+    }
+  }
+  .ntime {
+    display: none;
+    padding: 15px;
+    width: 250px;
+    background: #fff;
+    margin-left: 3px;
+    h5 {
+      color: black;
+      border-bottom: 1px solid gray;
+      font-weight: 200;
+    }
+    p {
+      color: #c8c8c8;
+      margin: unset;
+    }
+  }
+}
+.next-img-left:hover {
+  .ntime {
+    display: block;
+  }
+}

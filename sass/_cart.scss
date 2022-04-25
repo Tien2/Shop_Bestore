@@ -1,0 +1,459 @@
+// CSS TABLE KHÔNG REPOSIVE
+// .cart-table {
+//   .table-cart {
+//     width: 100%;
+//     margin-top: 50px;
+//     border: 1px solid #e8e8e8;
+//     border-radius: 2px;
+//     .header-table {
+//       height: 40px;
+//       border: 1px solid #e8e8e8;
+//       box-shadow: inset 0px 0px 12px #e8e8e8;
+//       .hdtable-unset {
+//         width: 140px;
+//         p {
+//           margin: unset;
+//         }
+//       }
+//       .hdtable-product {
+//         width: 327px;
+//         p {
+//           margin: unset;
+//         }
+//       }
+//       .hdtable-price {
+//         text-align: center;
+//         width: 147px;
+//         p {
+//           margin: unset;
+//         }
+//       }
+//       .hdtable-quantity {
+//         text-align: center;
+//         width: 200px;
+//         p {
+//           margin: unset;
+//         }
+//       }
+//       .hdtable-subtotal {
+//         text-align: center;
+//         width: 181px;
+//         p {
+//           margin: unset;
+//         }
+//       }
+//       .hdtable-unset2 {
+//         text-align: center;
+//         width: 189px;
+//         p {
+//           margin: unset;
+//         }
+//       }
+//     }
+//     .body-table {
+//       .tbbody-thumble {
+//         text-align: center;
+//         height: 121px;
+//         .cart-table-img {
+//           margin-left: -5px;
+//           width: 100px;
+//         }
+//       }
+//       .tbbody-product {
+//         height: 121px;
+//         text-align: left;
+//         a {
+//           text-decoration: none;
+//           color: $colorText;
+//           font-size: 16px;
+//           font-weight: 700;
+//           &:hover {
+//             text-decoration: underline;
+//           }
+//         }
+//       }
+//       .tbbody-price {
+//         text-align: center;
+//         height: 121px;
+//         p {
+//           margin: unset;
+//         }
+//       }
+//       .tbbody-quantity {
+//         text-align: center;
+//         height: 121px;
+//         p {
+//           margin: unset;
+//         }
+//       }
+//       .tbbody-subtotal {
+//         text-align: center;
+//         height: 121px;
+//         p {
+//           margin: unset;
+//         }
+//       }
+//       .tbbody-unset {
+//         height: 121px;
+//         .tb-unset {
+//           margin-left: 100px;
+//           width: 44px;
+//           height: 44px;
+//           border: 2px solid $colorText;
+//           background: #fff;
+//           border-radius: 4px;
+//           p {
+//             color: $colorText;
+//             margin-left: 14px;
+//             margin-top: 4px;
+//             font-size: 20px;
+//             font-weight: 600;
+//             &:hover {
+//               color: #fff;
+//             }
+//           }
+//           &:hover {
+//             background: $colorText;
+//           }
+//         }
+//       }
+//     }
+//     .body-coupon {
+//       .coupon-text {
+//         padding: 10px 20px;
+//         .coupon-text-input {
+//           width: 130px;
+//           height: 48px;
+//           border: 2px solid #dcdcdc;
+//           border-radius: 5px;
+//           ::placeholder {
+//             text-align: center;
+//             color: gray;
+//             margin-left: 4px;
+//             font-size: 20px;
+//           }
+//         }
+//       }
+//       .coupon-apply {
+//         margin-top: 10px;
+//         width: 132px;
+//         height: 48px;
+//         border: 2px solid $colorText;
+//         border-radius: 3px;
+//         p {
+//           margin-top: 10px;
+//           text-align: center;
+//           color: $colorText;
+//         }
+//         &:hover {
+//           background: $colorText;
+//           p {
+//             color: #fff;
+//           }
+//         }
+//       }
+//       .coupon-update {
+//         width: 120px;
+//         height: 48px;
+//         border: 2px solid $colorText;
+//         border-radius: 3px;
+//         float: right;
+//         margin-right: 60px;
+//         p {
+//           margin-top: 10px;
+//           text-align: center;
+//           color: $colorText;
+//         }
+//         &:hover {
+//           background: $colorText;
+//           p {
+//             color: #fff;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// CSS TABLE CÓ REPOSIVE
+* {
+  box-sizing: border-box;
+}
+
+.table {
+  margin-top: 30px;
+  border: 2px solid #dcdcdc;
+  width: 100%;
+  border-collapse: collapse;
+  .table td,
+  .table th {
+    padding: 15px 15px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .header-table-2 {
+    border: 2px solid #dcdcdc;
+    border-bottom: unset;
+    box-shadow: 0px 3px 16px 2px #e8e8e8;
+  }
+  .body-table-2 {
+    border-bottom: 1px solid #dcdcdc;
+    position: relative;
+    .table-img {
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    .table-product {
+      a {
+        position: absolute;
+        bottom: 47px;
+        text-decoration: none;
+        color: $colorText;
+        font-size: 20px;
+        font-weight: 500;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .table-subtotal,
+    .table-price {
+      position: absolute;
+      bottom: 24px;
+      p {
+        font-weight: 500;
+        color: gray;
+      }
+    }
+    .table-quantity {
+      input {
+        position: absolute;
+        bottom: 47px;
+      }
+    }
+    .table-ban {
+      width: 42px;
+      height: 42px;
+      background: #fff;
+      border: 2px solid $colorText;
+      position: absolute;
+      bottom: 47px;
+      p {
+        margin: unset;
+        font-size: 20px;
+        margin-top: 2px;
+        font-weight: 500;
+        text-align: center;
+        color: $colorText;
+      }
+      &:hover {
+        background: $colorText;
+        p {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .body-coupon {
+    .coupon {
+      .input-text {
+        width: 132px;
+        height: 44px;
+        border: 2px solid #e8e8e8;
+        border-radius: 4px;
+        margin-right: 5px;
+        ::placeholder {
+          color: gray;
+          font-size: 20px;
+          font-weight: 500;
+        }
+      }
+      .coupon-apply {
+        text-align: center;
+        width: 130px;
+        height: 44px;
+        border: 2px solid $colorText;
+        border-radius: 4px;
+        p {
+          margin-top: 5px;
+          color: $colorText;
+          font-size: 17px;
+          font-weight: 400;
+        }
+        &:hover {
+          background: $colorText;
+          p {
+            color: #fff;
+          }
+        }
+      }
+    }
+    .coupon-update {
+      text-align: center;
+      width: 130px;
+      height: 44px;
+      border: 2px solid $colorText;
+      border-radius: 4px;
+      p {
+        margin-top: 5px;
+        color: $colorText;
+        font-size: 17px;
+        font-weight: 400;
+      }
+      &:hover {
+        background: $colorText;
+        p {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.table > :not(caption) > * > * {
+  border-bottom-width: 0px !important;
+  padding: 10px;
+  width: 18%;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+/*responsive*/
+@media (max-width: 500px) {
+  .table thead {
+    display: none;
+  }
+  .table,
+  .table tbody,
+  .table tr,
+  .table td {
+    display: block;
+    width: 100%;
+  }
+  .table tr {
+    margin-bottom: 15px;
+  }
+  .table td {
+    text-align: right;
+    padding-left: 50%;
+    text-align: right;
+    position: relative;
+  }
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+
+// STYLE BOTTOM CART
+.cbtsty {
+  width: 275px;
+  height: 275px;
+}
+.cart-bottom {
+  .cart-interested {
+    h3 {
+      font-size: 23px;
+      font-weight: 300;
+    }
+  }
+  .cart-total {
+    h3 {
+      font-size: 24px;
+      font-weight: 300;
+    }
+    .tbbt-rc {
+      height: 40px;
+      border: 1px solid #e8e8e8;
+      box-shadow: inset 0px 0px 12px #e8e8e8;
+      .btr-cart-name {
+        text-align: center;
+        width: 300px;
+        font-size: 17px;
+        color: black;
+        font-weight: 400;
+      }
+      .btr-cart-pay {
+        text-align: center;
+        font-weight: 300;
+        font-size: 18px;
+        color: #d0d0d0;
+      }
+    }
+    .cbtr-checkout {
+      width: 100%;
+      height: 48px;
+      background: white;
+      text-align: center;
+      border: 2px solid $colorText;
+      border-radius: 5px;
+      margin-top: 30px;
+      h4 {
+        font-size: 20px;
+        margin-top: 10px;
+        color: $colorText;
+        font-weight: 400;
+      }
+      &:hover {
+        background: $colorText;
+        h4 {
+          color: white;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 376px) {
+  .container {
+    padding: 0px 33px;
+  }
+  .cart-interested {
+    margin-top: 30px !important;
+  }
+  .cart-total {
+    margin-top: 35px !important;
+    .btr-cart-name {
+      width: 90px !important;
+    }
+  }
+  .table {
+    .table-img {
+      display: none;
+    }
+  }
+  .body-table-2 {
+    .table-product {
+      a {
+        bottom: unset !important;
+        position: unset !important;
+        font-size: 16px;
+      }
+    }
+    .table-price,
+    .table-subtotal {
+      bottom: unset !important;
+      position: unset !important;
+    }
+    .table-quantity {
+      input {
+        bottom: unset !important ;
+        position: unset !important;
+      }
+    }
+    .table-ban {
+      position: unset !important;
+      bottom: unset !important;
+      p {
+        margin: unset;
+      }
+    }
+  }
+}
