@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Playfair+Display:wght@400;500&display=swap");
 
+.ContactUS {
+  padding: 50px 0px;
+  background: white;
+}
 .ct-form {
   .ct-form-a {
     padding: 10px;
@@ -29,11 +33,19 @@
     }
   }
   .ct-send-email {
-    background: #fff;
-    width: 165px;
     height: 40px;
     border-radius: 5px;
-    border: 2px solid $colorText;
+    .submitSend {
+      font-weight: 500;
+      color: #a4916d;
+      background: white;
+      border: 2px solid #a4916d;
+      border-radius: 3px;
+      color: #a4916d;
+      line-height: 35px;
+      width: 175px;
+      margin-top: 15px;
+    }
     p {
       font-size: 17px;
       font-weight: 400;
@@ -42,7 +54,6 @@
       color: $colorText;
     }
     &:hover {
-      background: $colorText;
       p {
         color: white;
       }
@@ -77,6 +88,10 @@
     }
   }
 }
+.submitSend:hover {
+  background-color: #a4916d !important;
+  color: white !important;
+}
 .one-second .column {
   width: 48%;
 }
@@ -88,15 +103,30 @@
   float: left;
   margin: 0px 1%;
 }
+.form-control {
+  padding: 10px !important;
+  color: #626262 !important;
+  border: 1px solid #ebebeb;
+}
+.form-control:focus {
+  background-color: #f0f0f0;
+  box-shadow: none;
+  border: 1px solid #ebebeb;
+}
 span.wpcf7-form-control-wrap {
   width: 100%;
   position: relative !important;
   display: inline-block;
   margin-bottom: 3px;
 }
-@media only screen and (max-width: 376px) {
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 90% !important;
+  }
+}
+@media only screen and (max-width: 400px) {
   .ContactUS {
-    padding: 0px 33px !important;
+    padding: 33px 20px !important;
   }
   .ct-aha {
     padding: 0px 11px;
@@ -123,6 +153,12 @@ span.wpcf7-form-control-wrap {
     }
     p {
       font-size: 13px;
+    }
+  }
+  .ct-message {
+    padding-bottom: 50px;
+    .ct-send-email {
+      height: 100%;
     }
   }
 }

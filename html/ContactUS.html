@@ -1,4 +1,4 @@
-<div class="ContactUS" style="padding: 50px 0px; background: #f0f0f0">
+<div class="ContactUS">
   <div class="row container" style="margin: auto; padding: unset">
     <!-- GOOGLE MAP -->
     <div class="col-12 grid-bt">
@@ -1739,19 +1739,60 @@
         </div> -->
       </div>
     </div>
-    <div class="col-12 grid-bt" style="margin-top: 40px">
+    <div class="col-12" style="margin-top: 40px">
       <div class="row ct-aha">
-        <div class="col-12 col-lg-7 grid-bt-ct">
+        <div class="col-12 col-md-8">
           <div class="ct-message">
             <h3 style="margin-bottom: 40px">
               Send us <i class="highlight-font">a message</i>
             </h3>
             <div class="ct-send-email">
-              <p>SEND A MESSAGE</p>
+              <div class="row">
+                <div class="col-sm-6 mb-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your name"
+                    aria-label="First name"
+                  />
+                </div>
+                <div class="col-sm-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your email"
+                    aria-label="Last name"
+                  />
+                </div>
+                <div class="col-12 mt-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Subject"
+                    aria-label="Last name"
+                  />
+                </div>
+                <div class="col-12 mt-2">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="5"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+                <div class="col-3">
+                  <input
+                    type="submit"
+                    value="SEND A MESSAGE"
+                    class="submitSend"
+                    onclick="clickform()"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-lg-5 grid-bt-ct">
+        <div class="col-12 col-md-4 grid-bt-ct">
           <div class="ct-information">
             <h3 style="margin-bottom: 40px">
               Useful <i class="highlight-font">information</i>

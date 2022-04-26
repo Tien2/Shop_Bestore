@@ -12,10 +12,10 @@
     opacity: 1;
     display: block;
     width: 100%;
+    transition: all 0.4s ease;
   }
 }
 .middle {
-  opacity: 0;
   position: absolute;
   top: 43%;
   left: 31%;
@@ -23,6 +23,9 @@
     position: absolute;
     color: white;
     font-size: 16px;
+    opacity: 0;
+    transform: scale(0.1);
+    transition: 0.4s ease-in-out;
     .icon-hover {
       text-align: center;
       width: 60px;
@@ -45,11 +48,11 @@
   }
 }
 .bl-a:hover .image {
-  transform: scale(1.15);
-  transition: all 0.3s;
+  transform: scale(1.2);
 }
-.bl-a:hover .middle {
+.bl-a:hover .text {
   opacity: 1;
+  transform: scale(1);
 }
 // CSS TEXT IMG
 .post-desc {
@@ -94,3 +97,38 @@
   }
 }
 // MODAL IMG
+#blog {
+  .modal {
+    background-color: #0b0b0b;
+    opacity: 0.8;
+    .modal-dialog {
+      margin: 0 !important;
+      width: 100%;
+      max-width: unset;
+      height: 100% !important;
+      pointer-events: unset;
+      .container-modal {
+        position: absolute;
+        left: 25%;
+        top: 15%;
+        display: flex;
+        i {
+          right: 0px;
+          font-size: 20px;
+          position: absolute;
+          text-align: right;
+          padding-bottom: 10px;
+          color: #fff;
+          top: -30px;
+          cursor: zoom-out;
+        }
+        img {
+          opacity: 1 !important;
+        }
+      }
+    }
+  }
+}
+.img_auto {
+  height: max-content !important;
+}
