@@ -3,11 +3,49 @@
     <!-- GOOGLE MAP -->
     <div class="col-12 grid-bt">
       <div class="ct-map">
-        <iframe
+        <!-- MAP OLD  -->
+        <!-- <iframe
           src="https://www.google.com/maps/d/u/0/embed?mid=1ex_zXMkLaFCtZsI79C7ebv0vez_f1BTC&ehbc=2E312F"
           width="100%"
           height="500px"
-        ></iframe>
+        ></iframe> -->
+        <!-- MAP NEW  -->
+        <div id="map"></div>
+        <script>
+          var map = L.map("map").setView([-33.863, 151.212], 17);
+          L.tileLayer(
+            "https://api.maptiler.com/maps/basic/{z}/{x}/{y}.png?key=wTPUCXySWRTWpynNjV0i",
+            {
+              attribution:
+                '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+              crossOrigin: true,
+            }
+          ).addTo(map);
+          var leafletIcon = L.icon({
+            iconUrl:
+              "https://greenupload.com/images/2022/04/28/home_store_pin.png",
+            iconSize: [36, 36],
+            iconAnchor: [22, 22],
+          });
+          var market = L.marker([-33.863, 151.21], { icon: leafletIcon }).addTo(
+            map
+          );
+          var market = L.marker([-33.86311, 151.211], {
+            icon: leafletIcon,
+          }).addTo(map);
+          var market = L.marker([-33.86312, 151.212], {
+            icon: leafletIcon,
+          }).addTo(map);
+          var market = L.marker([-33.8631, 151.2112], {
+            icon: leafletIcon,
+          }).addTo(map);
+          var market = L.marker([-33.86313, 151.2114], {
+            icon: leafletIcon,
+          }).addTo(map);
+          var market = L.marker([-33.86311, 151.21121], {
+            icon: leafletIcon,
+          }).addTo(map);
+        </script>
         <!-- CLONE MAP CONTACT US -->
         <!-- <div class="google-map-wrapper no_border">
           <div

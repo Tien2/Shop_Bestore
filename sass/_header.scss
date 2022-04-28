@@ -1,94 +1,248 @@
-.logo{
-    text-align: center;
-    margin: 0;
-    padding: 0 30px;
-    border-bottom: 1px solid;
-    height: 120px;
-    .logo_img{
-        height:60px;
-        padding: 30px 0;
-    }
+.logo {
+  text-align: center;
+  margin: 0;
+  padding: 0 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  height: 120px;
+  .logo_img {
+    height: 60px;
+    padding: 30px 0;
+  }
 }
-.naviagtion{
-    .nav{
-        text-align: center;
-        .main-menu{
-            display: flex;
-            list-style: none;
-            .menu-item{
-                padding : 0 20px 0 20px;
-                .nav-item{
-                    color: black;
-                    line-height: 60px;
-                    font-size: 14px;
-                    font-weight: 700;
-                    letter-spacing: 2px;
-                }
-                .menu-lv1{ display: none !important;
-                   position: absolute;
-                   text-align: start;
-                   list-style:  none;
-                    display: flex;
-                    width: 1075.6px;
-                    background-color: #f3f3f3;
-                    left:0px;
-                    li a{
-                        display: block;
-                        padding: 10px 20px;
-                    }
-                    .menu-lv2{
-                        padding: 0px;
-                        list-style: none;
-                        left: auto;
-                        li a{
-                            display: block;
-                            padding: 10px 20px;
-                        }
-                    }
-                    }
-                }
-                .nav-bg{
-                    padding: 20px 166px 20px 20px;
-                    background-image: url(https://themes.muffingroup.com/be/store/wp-content/uploads/2015/03/home_store_megamenu_her.jpg);
-                    background-repeat: no-repeat;
-                    background-position: right bottom;
-                }
-            }
-        }
-    }
-
-.top_bar{
+.naviagtion {
+  .nav .main-menu .menu-item::after {
+    content: "";
+    height: 4px;
+    width: 100%;
     position: absolute;
-    height:60px;
-    bottom:0px;
-    right:0px;
-    .header_cart{
-        margin-right:5px;
-            span{
-                position: relative;
-                right:2px;
-                bottom: 9px;
-                display: inline-block;
-                background-color: #a4916d;
-                width:15px;
-                text-align: center;
-                border-radius: 3px;
-                color:white;
-                font-size: 12px;
-            }
-            i{
-                color:#a4916d;
-                font-size: 22px;
-            }
-        
-    }
-    .search_button{
-        i{
-            color:#a4916d;
-            font-size: 22px;
+    left: 0;
+    top: -4px;
+    z-index: 203;
+    opacity: 0;
+  }
+  .nav {
+    text-align: center;
+    .main-menu {
+      display: flex;
+      list-style: none;
+      .menu-item {
+        padding: 0 20px 0 20px;
+        border-top: 4px solid white;
+        .nav-item {
+          color: #000000;
+          text-decoration: none;
+          font-family: "Lato", Helvetica, Arial, sans-serif;
+          line-height: 60px;
+          font-size: 14px;
+          font-weight: 700;
+          letter-spacing: 2px;
         }
+        .menu-lv1 {
+          display: none;
+          width: 100% !important;
+          position: absolute;
+          text-align: start;
+          list-style: none;
+          width: 1075.6px;
+          background-color: #f3f3f3;
+          left: 0px;
+          li a {
+            display: block;
+            padding: 10px 20px;
+          }
+          .menu-lv2 {
+            padding: 0px;
+            list-style: none;
+            left: auto;
+            li a {
+              display: block;
+              padding: 10px 20px;
+            }
+          }
+        }
+      }
+      .menu-item:hover .menu-lv1 {
+        display: flex;
+        z-index: 100;
+      }
+      .menu-item:hover {
+        border-color: #a4916d;
+      }
+      .nav-bg {
+        padding: 20px 166px 20px 20px;
+        background-image: url(https://themes.muffingroup.com/be/store/wp-content/uploads/2015/03/home_store_megamenu_her.jpg);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+      }
+      .nav-bg1 {
+        padding: 20px 166px 20px 20px;
+        background-image: url(https://themes.muffingroup.com/be/store/wp-content/uploads/2015/03/home_store_megamenu_him.jpg);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+      }
     }
+  }
+  .main-menu-responsive {
+    display: block;
+  }
+}
+
+.top_bar {
+  position: absolute;
+  height: 60px;
+  bottom: 0px;
+  right: 0px;
+  .header_cart {
+    margin-right: 5px;
+    text-decoration: none;
+    span {
+      position: relative;
+      right: 2px;
+      bottom: 9px;
+      display: inline-block;
+      background-color: #a4916d;
+      width: 15px;
+      text-align: center;
+      border-radius: 3px;
+      color: white;
+      font-size: 12px;
+    }
+    i {
+      color: #a4916d;
+      font-size: 22px;
+    }
+  }
+  .search_button {
+    i {
+      color: #a4916d;
+      font-size: 22px;
+    }
+  }
+}
+.naviagtion {
+  .btn_responsive {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1230px) {
+  .header-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .top-menu-fixed {
+    position: fixed !important;
+    background-color: white;
+    z-index: 100;
+    top: 0px;
+    right: -10%;
+    width: 100%;
+    opacity: 0.8;
+  }
+  .top-menu-fixed1 {
+    z-index: 101;
+    position: fixed !important;
+    top: 20px;
+    right: 11%;
+  }
 }
 @media only screen and (max-width: 1025px) {
- 
+  .nav {
+    display: none;
   }
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .naviagtion {
+    height: 20px;
+    position: relative;
+    .btn_responsive {
+      display: inline-block;
+      position: absolute;
+      bottom: -26px;
+      font-size: 30px;
+      color: #808080;
+      font-weight: 700;
+    }
+    .main-menu-responsive {
+      z-index: 100;
+      height: auto;
+      width: 300px;
+      left: -5px;
+      background: white;
+      position: absolute;
+      top: 50px;
+      .menu-item {
+        list-style: none;
+        line-height: 45px;
+        position: relative;
+        .nav-item {
+          font-weight: 700;
+          color: #585858;
+          font-size: 14px;
+          text-decoration: none;
+          .menu-toggle {
+            color: #585858;
+            display: block;
+            position: absolute;
+            right: 15px;
+            top: 0;
+            width: 44px;
+            height: 44px;
+            line-height: 44px;
+            font-size: 30px;
+            font-weight: 300;
+            text-align: center;
+            cursor: pointer;
+            color: #444;
+            opacity: 0.33;
+          }
+          .menu-toggle::after {
+            content: "+";
+          }
+        }
+        .menu-lv1 {
+          display: block;
+          list-style: none;
+          padding-left: 15px;
+          background-color: #f3f3f3;
+          .menu-lv2 {
+            list-style: none;
+            padding-left: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .top_bar {
+    position: absolute;
+    bottom: -60px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .top_bar {
+    display: none;
+  }
+  .logo {
+    height: 80px;
+  }
+  .naviagtion {
+    height: 0px;
+    .btn_responsive {
+      right: -20px;
+      bottom: 25px;
+    }
+    .main-menu-responsive {
+      top: 20px;
+      .menu-item {
+        .menu-lv1 {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.display-none {
+  display: none !important;
+}

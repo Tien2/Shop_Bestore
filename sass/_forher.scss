@@ -86,7 +86,7 @@
   }
   .rate-star {
     .checked {
-      color: white;
+      color: $colorText;
       font-weight: 200;
     }
     color: $colorText;
@@ -147,7 +147,7 @@
 }
 // CSS BODY RIGHT
 .cart-img {
-  width: 15%;
+  width: 20%;
 }
 .item-cart {
   list-style: none;
@@ -170,11 +170,17 @@
     padding-top: 10px;
     padding-left: 10px;
   }
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 .fh_checkout {
   color: $colorText;
-  width: 150px;
-  height: 60px;
+  width: 127px;
+  height: 48px;
   background: #fff;
   border: 2px solid $colorText;
   border-radius: 4px;
@@ -184,9 +190,9 @@
     background: $colorText;
   }
   p {
-    font-size: 17px;
+    font-size: 15px;
     margin: unset;
-    padding-top: 12px;
+    padding-top: 10px;
   }
 }
 .money_1 {
@@ -249,17 +255,33 @@
 /* Import Google Font - Poppins */
 
 .price-input {
-  width: 100%;
+  width: 53%;
   display: flex;
+  .price-text {
+    position: relative;
+    span {
+      position: absolute;
+      margin-top: 12px;
+      margin-left: -15px;
+      font-size: 17px;
+      color: gray;
+    }
+  }
 }
 .price-input .field {
   display: flex;
-  width: 100%;
-  height: 45px;
   align-items: center;
   .input-max,
   .input-min {
+    padding: unset;
     margin: unset;
+    border: unset;
+    background: #e8e8e8;
+    color: gray;
+    font-size: 15px;
+  }
+  .input-min {
+    margin-left: 35px;
   }
 }
 .field input {
@@ -312,36 +334,82 @@ input[type="number"]::-webkit-inner-spin-button {
   -moz-appearance: none;
 }
 input[type="range"]::-webkit-slider-thumb {
-  height: 17px;
-  width: 17px;
+  height: 15px;
+  width: 15px;
   border-radius: 50%;
-  background: #17a2b8;
+  color: #fff;
+  border: 5px solid $colorText;
   pointer-events: auto;
   -webkit-appearance: none;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
-}
-input[type="range"]::-moz-range-thumb {
-  height: 17px;
-  width: 17px;
-  border: none;
-  border-radius: 50%;
-  background: #17a2b8;
-  pointer-events: auto;
-  -moz-appearance: none;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
 }
 .fh1 {
   padding: unset !important;
 }
+.fh2 {
+  .fh-filterby {
+    h4 {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 20px;
+      color: black;
+    }
+    ul {
+      list-style: none;
+      border-bottom: 1px solid gray;
+      padding: unset;
+      padding-bottom: 30px;
+      li {
+        margin-bottom: 5px;
+        a {
+          text-decoration: none;
+          color: #a4916d;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
 
 // MEDIA MOBILE - IPAD - IPAD MINI
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
   .payment {
     h6 {
-      font-size: 10px !important;
+      font-size: 13px !important;
+    }
+    i {
+      font-size: 13px !important;
     }
     a {
-      font-size: 9px !important;
+      font-size: 13px !important;
+    }
+  }
+  .cart-img {
+    width: 30% !important;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .payment {
+    h6 {
+      font-size: 13px !important;
+    }
+    i {
+      font-size: 13px !important;
+    }
+    a {
+      font-size: 13px !important;
+    }
+  }
+  .wrapper {
+    display: inline;
+    .money_1 {
+      width: 50px;
+      height: 30px;
+      p {
+        padding-top: 0px;
+      }
     }
   }
 }
