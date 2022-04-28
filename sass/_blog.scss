@@ -1,5 +1,15 @@
 @import "./variable";
-.blitem {
+.container {
+  padding: 20px 80px 0px 80px;
+}
+.blitem-1,
+.blitem-2,
+.blitem-3,
+.blitem-4,
+.blitem-5,
+.blitem-6 {
+  margin-bottom: 20px;
+  width: 375px;
   border: 1px solid black;
   .bl-a {
     position: relative;
@@ -73,7 +83,7 @@
   }
 }
 .post-footer {
-  background: #fff;
+  background: #fafafa;
   height: 44px;
   .post-links {
     margin: unset;
