@@ -1,481 +1,371 @@
-<div id="product">
-  <!-- STYLE HEADER ONE PAGE  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <link rel="stylesheet" href="/css/app.css" />
+    <link rel="icon" href="../img/img_header/home_store_slide2_look.png" />
 
-  <div class="product-header-2" >
-      <div class="SubMenu">
-        <div class="container_subMenu" >
-            <h2 class="title_subMenu">Shop</h2>
-            <ul class="ul_subMenu">
-              <li><a href="#">Home </a> <span><i class="fa-solid fa-chevron-right"></i></span></li>
-              <li><a href="#">For her </a> <span><i class="fa-solid fa-chevron-right"></i></span> </li>
-              <li><a href="#">Accessories </a><span><i class="fa-solid fa-chevron-right"></i></span></li>
-              <li><a href="#">Sunglasses </a> <span><i class="fa-solid fa-chevron-right"></i></span></li>
-              <li>Flying Ninja</li>
-            </ul>
-        </div>
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+    />
+    <!-- ADD MAP  -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+    <!-- ADD GOOGLE FONT  -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' integrity='sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==' crossorigin='anonymous'/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Lato:ital,wght@1,100;1,300;1,400;1,700&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/app.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <script>
+    $(function () {
+      $("#header").load("/include/header.html");
+      $("#footer").load("/include/footer.html");
+      $("#fixed").load("/include/fixed.html");
+      $("#next-item").load("/include/next-item.html");
+      $("#topContact").load("/include/topContact.html");
+    });
+  </script>
+  </head>
+  <body style="overflow-x: hidden">
+    <!-- ADD BODY PAGE -->
+    <div id="header"></div>
+    <div id="fixed"></div>
+    <div id="next-item"></div>
+    <!-- BODY PAGE  -->
+    <div id="product">
+      <!-- STYLE HEADER ONE PAGE  -->
+
+      <div class="product-header-2" >
+          <div class="SubMenu">
+            <div class="container_subMenu" >
+                <h2 class="title_subMenu">Shop</h2>
+                <ul class="ul_subMenu">
+                  <li><a href="/Home.html">Home </a> <span><i class="fa-solid fa-chevron-right"></i></span></li>
+                  <li><a href="/html/ForHer.html">For her </a> <span><i class="fa-solid fa-chevron-right"></i></span> </li>
+                  <li><a href="#">Accessories </a><span><i class="fa-solid fa-chevron-right"></i></span></li>
+                  <li><a href="#">Sunglasses </a> <span><i class="fa-solid fa-chevron-right"></i></span></li>
+                  <li>Flying Ninja</li>
+                </ul>
+            </div>
+          </div>
       </div>
-  </div>
-  <div class="Content_product">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-8 col-lg-9 pd1" style="padding:30px 0px">
-            <div class="Product_left">
-              <div style="border-bottom: 1px solid gray; padding-bottom: 30px;">
-                <div class="Product_tab_top">
-                    <ul class="bt_next">
-                        <li class="prev"><i class="fa-solid fa-angle-left"></i></li>
-                        <li class="next"><i class="fa-solid fa-angle-right"></i></li>
-                    </ul>
-                    <a class="list_right">
-                      <i class="fa-solid fa-layer-group"></i>
-                      Show all
-                    </a>
-                </div>
-                <div class="Product_wapper row" >
-                  <div class="Product_img_wapper col-12 col-md-12 col-lg-6 ">
-                    <!-- Nav tabs -->
-                    <div class="card">
-                      <div class="card-body">
-                        <!-- Tab panes -->
-                        <div class="tab-content text-center">               
-                          <div class="zoom-img tab-pane active" id="home" role="tabpanel" style="width: max-content;" >
-                            <figure id="magnifying_area">
-                              <img
-                                id="magnifying_img"
-                                src="../img/img_product/home_store_product1.jpg"
-                              />
-                            </figure>
-                          </div>
-                          <div class="zoom-img tab-pane" id="profile" role="tabpanel" style="width: max-content;" >
-                            <figure id="magnifying_area_2">
-                              <img
-                                id="magnifying_img_2"
-                                src="../img/img_product/home_store_product1b.jpg"
-                              />
-                            </figure>
-                          </div>
-                          <div class="zoom-img tab-pane" id="messages" role="tabpanel" style="width: max-content;" >
-                            <figure id="magnifying_area_3">
-                              <img
-                                id="magnifying_img_3"
-                                src="../img/img_product/home_store_product2.jpg"
-                              />
-                            </figure>
-                          </div>
-                          <div class="zoom-img tab-pane" id="settings" role="tabpanel" style="width: max-content;" >
-                            <figure id="magnifying_area_4">
-                              <img
-                                id="magnifying_img_4"
-                                src="../img/img_product/home_store_product2b.jpg"
-                              />
-                            </figure>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-header">
-                        <ul class="nav nav-tabs justify-content-center" role="tablist">
-                          <li class="nav-item">
-                            <a
-                              class="nav-link active"
-                              data-toggle="tab"
-                              href="#home"
-                              role="tab"
-                            >
-                              <img class="tab-img" src="../img/img_product/home_store_product1-300x300.jpg" alt="#">
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                            <a
-                              class="nav-link"
-                              data-toggle="tab"
-                              href="#profile"
-                              role="tab"
-                            >
-                            <img class="tab-img" src="../img/img_product/home_store_product1b-300x300.jpg" alt="#">
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                            <a
-                              class="nav-link"
-                              data-toggle="tab"
-                              href="#messages"
-                              role="tab"
-                            >
-                            <img class="tab-img" src="../img/img_product/home_store_product2.jpg" alt="#">
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                            <a
-                              class="nav-link"
-                              data-toggle="tab"
-                              href="#settings"
-                              role="tab"
-                            >
-                            <img class="tab-img" src="../img/img_product/home_store_product2b.jpg" alt="#">
-                            </a>
-                          </li>
+      <div class="Content_product">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-8 col-lg-9 pd1" style="padding:30px 0px">
+                <div class="Product_left">
+                  <div style="border-bottom: 1px solid gray; padding-bottom: 30px;">
+                    <div class="Product_tab_top">
+                        <ul class="bt_next">
+                            <li class="prev"><i class="fa-solid fa-angle-left"></i></li>
+                            <li class="next"><i class="fa-solid fa-angle-right"></i></li>
                         </ul>
-                      </div>
+                        <a class="list_right">
+                          <i class="fa-solid fa-layer-group"></i>
+                          Show all
+                        </a>
                     </div>
-                    <script src="../js/ZomIMG.js"></script>
-                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-                  </div>
-                  <div class="Product_content_wapper col-12 col-md-12 col-lg-6 ">
-                    <h1 class="product-title">Flying Ninja</h1>
-                    <div class="product-rating"></div>
-                    <p class="product-price">
-                      <span class="span_product_1">£15.00</span>
-                      <span class="span_product_2">£12.00</span>
-                    </p>
-                    <div class="desc-text">
-                      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                    </div>
-                    <div class="addCart">
-                        <input class="number_product" type="number" step="1" value="1" min="0">
-                        <button class="bt_addCart">Add to cart</button>
-                      </form>
-                      
-                    </div>
-                    <div class="posted_meta">
-                      <div class="post_in">
-                        Categories: <a>Dresses</a>, <a>Jeans</a>, <a>Moccasins</a>, <a>Sandals</a>, <a>Shorts</a>, <a>Sunglasses</a>, <a>Trousers</a>
-                      </div>
-                    </div>
-                    <div class="accordion">
-                      <div class="wapper_accordion">
-                        <div class="accordion" id="accordionExample1">
-                          <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <p>Description</p>
-                              </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample1">
-                              <div class="accordion-body">
-                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    <div class="Product_wapper row" >
+                      <div class="Product_img_wapper col-12 col-md-12 col-lg-6 ">
+                        <!-- Nav tabs -->
+                        <div class="card">
+                          <div class="card-body">
+                            <!-- Tab panes -->
+                            <div class="tab-content text-center">               
+                              <div class="zoom-img tab-pane active" id="home" role="tabpanel" style="width: max-content;" >
+                                <figure id="magnifying_area">
+                                  <img
+                                    id="magnifying_img"
+                                    src="../img/img_product/home_store_product1.jpg"
+                                  />
+                                </figure>
+                              </div>
+                              <div class="zoom-img tab-pane" id="profile" role="tabpanel" style="width: max-content;" >
+                                <figure id="magnifying_area_2">
+                                  <img
+                                    id="magnifying_img_2"
+                                    src="../img/img_product/home_store_product1b.jpg"
+                                  />
+                                </figure>
+                              </div>
+                              <div class="zoom-img tab-pane" id="messages" role="tabpanel" style="width: max-content;" >
+                                <figure id="magnifying_area_3">
+                                  <img
+                                    id="magnifying_img_3"
+                                    src="../img/img_product/home_store_product2.jpg"
+                                  />
+                                </figure>
+                              </div>
+                              <div class="zoom-img tab-pane" id="settings" role="tabpanel" style="width: max-content;" >
+                                <figure id="magnifying_area_4">
+                                  <img
+                                    id="magnifying_img_4"
+                                    src="../img/img_product/home_store_product2b.jpg"
+                                  />
+                                </figure>
                               </div>
                             </div>
                           </div>
-                          </div>  
-
-                          <div class="accordion" id="accordionExample2">
-                            <div class="accordion-item">
-                              <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne">
-                                  <p>Reviews (4)</p>
-                                </button>
-                              </h2>
-                              <div id="collapseOne1" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
-                                <div class="accordion-body">
-                                  <div id="reviews">
-                                    <div id="comments">
-                                      <h2 class="title_reviews" style="border-top: 1px solid #d8d8d8; padding-top: 10px;">4 reviews for Flying Ninja</h2>
-                                      <ol class="commnetList" style="list-style: none;">
-                                        <li class="commnetItem">
-                                          <img src="/img/img_product/avatar1.png" class="img_item">
-                                          <div class="comment_text">
-                                            <div style="display: flex;justify-content: space-between;">
-                                              <p class="title_item">
-                                                <strong>Cobus Bester 
-                                                  <span>- June 7, 2013</span>
-                                                </strong>
-                                              </p>
-                                              <div class="rate-star">
-                                                <span class="fa fa-star "></span>
-                                                <span class="fa fa-star "></span>
-                                                <span class="fa fa-star "></span>
-                                                <span class="fa fa-star"></span>
-                                                <span class="fa fa-star checked" style="font-weight: 100;"></span>
-                                              </div>
-                                            </div>
-                                            <div class="txt_item">
-                                              <p>Really happy with this print. The colors are great, and the paper quality is good too.</p>
-                                            </div>
-                                          </div>
-                                        </li>
-                                        <li class="commnetItem">
-                                          <img src="/img/img_product/avatar_rating2.jpeg" class="img_item">
-                                          <div class="comment_text">
-                                            <div style="display: flex;justify-content: space-between;">
-                                              <p class="title_item">
-                                                <strong>Ryan
-                                                  <span>- June 7, 2013</span>
-                                                </strong>
-                                              </p>
-                                              <div class="rate-star">
-                                                <span class="fa fa-star "></span>
-                                                <span class="fa fa-star "></span>
-                                                <span class="fa fa-star "></span>
-                                                <span class="fa fa-star"></span>
-                                                <span class="fa fa-star checked" style="font-weight: 100;"></span>
-                                              </div>
-                                            </div>
-                                            <div class="txt_item">
-                                              <p>This hoodie gets me lots of looks while out in public, I got the blue one and it’s awesome. Not sure if people are looking at my hoodie only, or also at my rocking bod.</p>
-                                            </div>
-                                          </div>
-                                        </li>
-                                        <li class="commnetItem">
-                                          <img src="/img/img_product/avatar_rating2.png" class="img_item">
-                                          <div class="comment_text">
-                                            <div style="display: flex;justify-content: space-between;">
-                                              <p class="title_item">
-                                                <strong>Maria
-                                                  <span>- June 7, 2013</span>
-                                                </strong>
-                                              </p>
-                                              <div class="rate-star">
-                                                <span class="fa fa-star "></span>
-                                                <span class="fa fa-star "></span>
-                                                <span class="fa fa-star "></span>
-                                                <span class="fa fa-star"></span>
-                                                <span class="fa fa-star checked" style="font-weight: 100;"></span>
-                                              </div>
-                                            </div>
-                                            <div class="txt_item">
-                                              <p>This hoodie gets me lots of looks while out in public, I got the blue one and it’s awesome. Not sure if people are looking at my hoodie only, or also at my rocking bod.</p>
-                                            </div>
-                                          </div>
-                                        </li>
-                                        <li class="addreview">
-                                          <h3>Add a review </h3>
-                                          <p>You must be <a href="#">logged in </a> to post a review</p>
-                                        </li>
-                                      </ol>
-                                    </div>
+                          <div class="card-header">
+                            <ul class="nav nav-tabs justify-content-center" role="tablist">
+                              <li class="nav-item">
+                                <a
+                                  class="nav-link active"
+                                  data-toggle="tab"
+                                  href="#home"
+                                  role="tab"
+                                >
+                                  <img class="tab-img" src="../img/img_product/home_store_product1-300x300.jpg" alt="#">
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a
+                                  class="nav-link"
+                                  data-toggle="tab"
+                                  href="#profile"
+                                  role="tab"
+                                >
+                                <img class="tab-img" src="../img/img_product/home_store_product1b-300x300.jpg" alt="#">
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a
+                                  class="nav-link"
+                                  data-toggle="tab"
+                                  href="#messages"
+                                  role="tab"
+                                >
+                                <img class="tab-img" src="../img/img_product/home_store_product2.jpg" alt="#">
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a
+                                  class="nav-link"
+                                  data-toggle="tab"
+                                  href="#settings"
+                                  role="tab"
+                                >
+                                <img class="tab-img" src="../img/img_product/home_store_product2b.jpg" alt="#">
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <script src="../js/ZomIMG.js"></script>
+                        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+                      </div>
+                      <div class="Product_content_wapper col-12 col-md-12 col-lg-6 ">
+                        <h1 class="product-title">Flying Ninja</h1>
+                        <div class="product-rating"></div>
+                        <p class="product-price">
+                          <span class="span_product_1">£15.00</span>
+                          <span class="span_product_2">£12.00</span>
+                        </p>
+                        <div class="desc-text">
+                          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                        </div>
+                        <div class="addCart">
+                            <input class="number_product" type="number" step="1" value="1" min="0">
+                            <button class="bt_addCart">Add to cart</button>
+                          </form>
+                          
+                        </div>
+                        <div class="posted_meta">
+                          <div class="post_in">
+                            Categories: <a>Dresses</a>, <a>Jeans</a>, <a>Moccasins</a>, <a>Sandals</a>, <a>Shorts</a>, <a>Sunglasses</a>, <a>Trousers</a>
+                          </div>
+                        </div>
+                        <div class="accordion">
+                          <div class="wapper_accordion">
+                            <div class="accordion" id="accordionExample1">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <p>Description</p>
+                                  </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample1">
+                                  <div class="accordion-body">
+                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
                                   </div>
                                 </div>
                               </div>
-                            </div>
-                          </div> 
+                              </div>  
+
+                              <div class="accordion" id="accordionExample2">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne">
+                                      <p>Reviews (4)</p>
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne1" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
+                                    <div class="accordion-body">
+                                      <div id="reviews">
+                                        <div id="comments">
+                                          <h2 class="title_reviews" style="border-top: 1px solid #d8d8d8; padding-top: 10px;">4 reviews for Flying Ninja</h2>
+                                          <ol class="commnetList" style="list-style: none;">
+                                            <li class="commnetItem">
+                                              <img src="/img/img_product/avatar1.png" class="img_item">
+                                              <div class="comment_text">
+                                                <div style="display: flex;justify-content: space-between;">
+                                                  <p class="title_item">
+                                                    <strong>Cobus Bester 
+                                                      <span>- June 7, 2013</span>
+                                                    </strong>
+                                                  </p>
+                                                  <div class="rate-star">
+                                                    <span class="fa fa-star "></span>
+                                                    <span class="fa fa-star "></span>
+                                                    <span class="fa fa-star "></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star checked" style="font-weight: 100;"></span>
+                                                  </div>
+                                                </div>
+                                                <div class="txt_item">
+                                                  <p>Really happy with this print. The colors are great, and the paper quality is good too.</p>
+                                                </div>
+                                              </div>
+                                            </li>
+                                            <li class="commnetItem">
+                                              <img src="/img/img_product/avatar_rating2.jpeg" class="img_item">
+                                              <div class="comment_text">
+                                                <div style="display: flex;justify-content: space-between;">
+                                                  <p class="title_item">
+                                                    <strong>Ryan
+                                                      <span>- June 7, 2013</span>
+                                                    </strong>
+                                                  </p>
+                                                  <div class="rate-star">
+                                                    <span class="fa fa-star "></span>
+                                                    <span class="fa fa-star "></span>
+                                                    <span class="fa fa-star "></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star checked" style="font-weight: 100;"></span>
+                                                  </div>
+                                                </div>
+                                                <div class="txt_item">
+                                                  <p>This hoodie gets me lots of looks while out in public, I got the blue one and it’s awesome. Not sure if people are looking at my hoodie only, or also at my rocking bod.</p>
+                                                </div>
+                                              </div>
+                                            </li>
+                                            <li class="commnetItem">
+                                              <img src="/img/img_product/avatar_rating2.png" class="img_item">
+                                              <div class="comment_text">
+                                                <div style="display: flex;justify-content: space-between;">
+                                                  <p class="title_item">
+                                                    <strong>Maria
+                                                      <span>- June 7, 2013</span>
+                                                    </strong>
+                                                  </p>
+                                                  <div class="rate-star">
+                                                    <span class="fa fa-star "></span>
+                                                    <span class="fa fa-star "></span>
+                                                    <span class="fa fa-star "></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star checked" style="font-weight: 100;"></span>
+                                                  </div>
+                                                </div>
+                                                <div class="txt_item">
+                                                  <p>This hoodie gets me lots of looks while out in public, I got the blue one and it’s awesome. Not sure if people are looking at my hoodie only, or also at my rocking bod.</p>
+                                                </div>
+                                              </div>
+                                            </li>
+                                            <li class="addreview">
+                                              <h3>Add a review </h3>
+                                              <p>You must be <a href="#">logged in </a> to post a review</p>
+                                            </li>
+                                          </ol>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div> 
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="Product_related" style="margin-top: 30px;">
-                <p>Relate product</p>
-                <ul class="row item" style="list-style: none">
-                  <li class="col-12 col-md-6 col-lg-4 ahaha">
-                    <div class="forher-body-img">
-                      <img
-                        class="forher-img"
-                        src="./img/img_forher/home_store_product1-700x700.jpg"
-                        alt=""
-                      />
-                      <img
-                        class="forher-img top-img"
-                        src="./img/img_forher/home_store_product1b-700x700.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <span class="onsale"><i class="fa fa-star"></i></span>
-                    <div class="forher-body-text">
-                      <h4><a>Woo Album #1</a></h4>
-                      <div class="rate-star">
-                        <span class="fa fa-star "></span>
-                        <span class="fa fa-star "></span>
-                        <span class="fa fa-star "></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star checked" style="font-weight: 100;"></span>
-                      </div>
-                      <span class="price">
-                        <ins>
-                          <span class="price-2">
-                            <bdi>
-                              <span class="price-cl-2">£</span>12.00
-                            </bdi>
+                  <div class="Product_related" style="margin-top: 30px;">
+                    <p>Relate product</p>
+                    <ul class="row" style="list-style: none; padding: unset; margin-top: 30px">
+                      <!-- ẢNH 1 -->
+                      <li class="col-12 col-lg-3 ahaha">
+                        <div class="forher-body-img">
+                          <img class="forher-img" src="../img/img_cart/home_store_product18-700x700.jpg" alt="">
+                          <img class="forher-img top-img" src="../img/img_cart/home_store_product18b-700x700.jpg" alt="">
+                        </div>
+                        <div class="forher-body-text">
+                          <h4><a>Woo Logo</a></h4>
+                          <div class="rate-star">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star checked"></span>
+                          </div>
+                          <span class="price">
+                            <del aria-hidden="true">
+                              <span class="price-1">
+                                <bdi>
+                                  <span class="price-cl">£</span>
+                                  20.00
+                                </bdi>
+                              </span>
+                            </del>
+                            <ins>
+                              <span class="price-2">
+                                <bdi> <span class="price-cl-2">£</span>18.00 </bdi>
+                              </span>
+                            </ins>
                           </span>
-                        </ins>
-                      </span>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3 fh2" style="padding: 0px 22px ;margin-top: 35px;">
-              <!-- SHOPPING CART -->
-              <div class="fh-cart">
-                <h4 style="font-size: 20px;
-                font-weight: 300;
-                line-height: 20px;
-                color: black;">Shopping Cart</h4>
-            <ul style="border-bottom: 1px solid gray; float: left;padding: unset;padding-bottom: 30px">
-              <li
-                style="
-                  list-style: none;
-                  padding: 10px 0px;
-                  border-bottom: 1px solid gray;
-                "
-              >
-                <a style="text-decoration: none" class="item-cart" href="#">
-                  <div style="display: flex; justify-content: space-between; position: relative;">
-                    <div class="cart-text">
-                      <p style="color: black; padding-top: 10px">Flying Ninja</p>
-                      <p style="color: gray">1 x 12.00£</p>
-                    </div>
-                    <img
-                      class="cart-img"
-                      src="./img/img_forher/home_store_product1-700x700.jpg"
-                      alt=""
-                    />
-                    <div class="unset-img" style="position: absolute;right: -4px; top: -12px;">
-                      <p style="color: red;font-weight: 600;">X</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li
-                style="
-                  list-style: none;
-                  padding: 10px 0px;
-                  border-bottom: 1px solid gray;
-                "
-              >
-                <a style="text-decoration: none" class="item-cart" href="#">
-                  <div style="display: flex; justify-content: space-between;position: relative;">
-                    <div class="cart-text">
-                      <p style="color: black; padding-top: 10px">Flying Ninja</p>
-                      <p style="color: gray">1 x 12.00£</p>
-                    </div>
-                    <img
-                      class="cart-img"
-                      src="./img/img_forher/home_store_product14-700x700.jpg"
-                      alt=""
-                    />
-                    <div class="unset-img" style="position: absolute;right: -4px; top: -12px;">
-                      <p style="color: red;font-weight: 600;">X</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li
-                style="
-                  list-style: none;
-                  padding: 10px 0px;
-                  border-bottom: 1px solid gray;
-                "
-              >
-                <a style="text-decoration: none" class="item-cart" href="#">
-                  <div style="display: flex; justify-content: space-between ;position: relative;">
-                    <div class="cart-text">
-                      <p style="color: black; padding-top: 10px">Flying Ninja</p>
-                      <p style="color: gray">1 x 12.00£</p>
-                    </div>
-                    <img
-                      class="cart-img"
-                      src="./img/img_forher/home_store_product2-700x700.jpg"
-                      alt=""
-                    />
-                    <div class="unset-img" style="position: absolute;right: -4px; top: -12px;">
-                      <p style="color: red;font-weight: 600;">X</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li
-                style="
-                  list-style: none;
-                  padding: 10px 0px;
-                  border-bottom: 1px solid gray;
-                "
-              >
-                <a style="text-decoration: none" class="item-cart" href="#">
-                  <div style="display: flex; justify-content: space-between ;position: relative;">
-                    <div class="cart-text">
-                      <p style="color: black; padding-top: 10px">Flying Ninja</p>
-                      <p style="color: gray">1 x 12.00£</p>
-                    </div>
-                    <img
-                      class="cart-img"
-                      src="./img/img_forher/home_store_product7-700x700.jpg"
-                      alt=""
-                    />
-                    <div class="unset-img" style="position: absolute;right: -4px; top: -12px;">
-                      <p style="color: red;font-weight: 600;">X</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li style="list-style: none; padding: 10px 0">
-                <div class="payment">
-                  <h6>
-                    Subtotal:£82.00
-                  </h6>
-                  <p style="padding-left: 3px"></p>
-                    <i style="color: #A4916D;padding-top: 10px;" class="fa-brands fa-windows"></i><a style="color: #A4916D;padding-top: 7px;" href="#">View Cart</a>
-                  </p>
-                </div>
-              </li>
-              <div class="fh_checkout">
-                <p><i style="padding-right: 10px;" class="fa-brands fa-windows"></i>Checkout</p>
-              </div>
-            </ul>
-              </div>
-              <!-- FILTER BY -->
-              <div class="fh-filterby">
-                <h4>Filter By</h4>
-                <ul>
-                  <li >
-                    <a href="#">black (2)</a>
-                  </li>
-                  <li style="border-top: 1px solid gray;margin-bottom: 5px;">
-                    <a href="#">blue (1)</a>
-                  </li>
-                  <li style="border-top: 1px solid gray;margin-bottom: 5px;">
-                    <a href="#">green (1)</a>
-                  </li>
-                </ul>
-              </div>
-              <!-- PRODUCT CATEGORIES -->
-              <div class="fh-productCG" style="border-bottom: 1px solid gray; padding-bottom: 30px; padding: 10px 0px;">
-                <h4 style="font-size: 20px;
-                font-weight: 300;
-                line-height: 20px;
-                color: black;">Product Categories</h4>
-                <ul style="list-style: square; color: #fff;" class="ul-product">
-                  <li style="padding: 5px; border-bottom: 1px solid #F0F0F0;">
-                    <a class="product-text" href="#">For her</a>
-                    <ul style="list-style: square;">
-                      <li>
-                        <a class="product-text" href="#">Accessories</a>
-                      </li>
-                      <li>
-                        <a class="product-text" href="#">Clothing</a>
-                      </li>
-                      <li>
-                        <a class="product-text"  href="#">Shoes</a>
+                        </div>
                       </li>
                     </ul>
-                  </li>
-                  <li style="padding: 5px; border-bottom: 1px solid #F0F0F0;">
-                    <a class="product-text" href="#">For Him</a>
-                  </li>
-                  <li style="padding: 5px; padding-bottom: 10px;">
-                    <a class="product-text" href="#">Uncategorized</a>
-                  </li>
-                </ul>
+                  </div>
+                </div>
               </div>
-              <!-- PRODUCT -->
-              <div class="fh-product" style="margin-top: 30px;">
-                <h4 style="font-size: 20px;
-                font-weight: 300;
-                line-height: 20px;
-                color: black;">Product</h4>
-                <ul style="border-bottom: 1px solid gray; float: left;padding: unset;">
+              <div class="col-12 col-md-4 col-lg-3 fh2" style="padding: 0px 22px ;margin-top: 35px;">
+                  <!-- SHOPPING CART -->
+                  <div class="fh-cart">
+                    <h4 style="font-size: 20px;
+                    font-weight: 300;
+                    line-height: 20px;
+                    color: black;">Shopping Cart</h4>
+                <ul style="border-bottom: 1px solid gray; float: left;padding: unset;padding-bottom: 30px">
                   <li
                     style="
                       list-style: none;
-                      padding: 5px 0px;
+                      padding: 10px 0px;
                       border-bottom: 1px solid gray;
                     "
                   >
                     <a style="text-decoration: none" class="item-cart" href="#">
-                      <div style="display: flex; justify-content: space-between">
+                      <div style="display: flex; justify-content: space-between; position: relative;">
                         <div class="cart-text">
-                          <p style="color: #A4916D; padding-top: 10px">Woo Album #1</p>
+                          <p style="color: black; padding-top: 10px">Flying Ninja</p>
                           <p style="color: gray">1 x 12.00£</p>
                         </div>
                         <img
@@ -483,20 +373,23 @@
                           src="./img/img_forher/home_store_product1-700x700.jpg"
                           alt=""
                         />
+                        <div class="unset-img" style="position: absolute;right: -4px; top: -12px;">
+                          <p style="color: red;font-weight: 600;">X</p>
+                        </div>
                       </div>
                     </a>
                   </li>
                   <li
                     style="
                       list-style: none;
-                      padding: 5px 0px;
+                      padding: 10px 0px;
                       border-bottom: 1px solid gray;
                     "
                   >
                     <a style="text-decoration: none" class="item-cart" href="#">
-                      <div style="display: flex; justify-content: space-between">
+                      <div style="display: flex; justify-content: space-between;position: relative;">
                         <div class="cart-text">
-                          <p style="color: #A4916D; padding-top: 10px">Woo Logo</p>
+                          <p style="color: black; padding-top: 10px">Flying Ninja</p>
                           <p style="color: gray">1 x 12.00£</p>
                         </div>
                         <img
@@ -504,52 +397,214 @@
                           src="./img/img_forher/home_store_product14-700x700.jpg"
                           alt=""
                         />
+                        <div class="unset-img" style="position: absolute;right: -4px; top: -12px;">
+                          <p style="color: red;font-weight: 600;">X</p>
+                        </div>
                       </div>
                     </a>
                   </li>
                   <li
                     style="
                       list-style: none;
-                      padding: 5px 0px;
+                      padding: 10px 0px;
+                      border-bottom: 1px solid gray;
                     "
                   >
                     <a style="text-decoration: none" class="item-cart" href="#">
-                      <div style="display: flex; justify-content: space-between">
+                      <div style="display: flex; justify-content: space-between ;position: relative;">
                         <div class="cart-text">
-                          <p style="color: #A4916D; padding-top: 10px">Woo Ninja</p>
+                          <p style="color: black; padding-top: 10px">Flying Ninja</p>
                           <p style="color: gray">1 x 12.00£</p>
-                          <div class="rate-star" style="font-size: 10px; color: #A4916D;">
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star "></span>
-                            <span class="fa fa-star "></span>
-                            <span class="fa fa-star"></span>
-                            <span style="color: #fff;" class="fa fa-star checked"></span>
-                          </div>
                         </div>
                         <img
                           class="cart-img"
                           src="./img/img_forher/home_store_product2-700x700.jpg"
                           alt=""
                         />
+                        <div class="unset-img" style="position: absolute;right: -4px; top: -12px;">
+                          <p style="color: red;font-weight: 600;">X</p>
+                        </div>
                       </div>
                     </a>
                   </li>
+                  <li
+                    style="
+                      list-style: none;
+                      padding: 10px 0px;
+                      border-bottom: 1px solid gray;
+                    "
+                  >
+                    <a style="text-decoration: none" class="item-cart" href="#">
+                      <div style="display: flex; justify-content: space-between ;position: relative;">
+                        <div class="cart-text">
+                          <p style="color: black; padding-top: 10px">Flying Ninja</p>
+                          <p style="color: gray">1 x 12.00£</p>
+                        </div>
+                        <img
+                          class="cart-img"
+                          src="./img/img_forher/home_store_product7-700x700.jpg"
+                          alt=""
+                        />
+                        <div class="unset-img" style="position: absolute;right: -4px; top: -12px;">
+                          <p style="color: red;font-weight: 600;">X</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li style="list-style: none; padding: 10px 0">
+                    <div class="payment">
+                      <h6>
+                        Subtotal:£82.00
+                      </h6>
+                      <p style="padding-left: 3px"></p>
+                        <i style="color: #A4916D;padding-top: 10px;" class="fa-brands fa-windows"></i><a style="color: #A4916D;padding-top: 7px;" href="#">View Cart</a>
+                      </p>
+                    </div>
+                  </li>
+                  <div class="fh_checkout">
+                    <p><i style="padding-right: 10px;" class="fa-brands fa-windows"></i>Checkout</p>
+                  </div>
                 </ul>
+                  </div>
+                  <!-- FILTER BY -->
+                  <div class="fh-filterby">
+                    <h4>Filter By</h4>
+                    <ul>
+                      <li >
+                        <a href="#">black (2)</a>
+                      </li>
+                      <li style="border-top: 1px solid gray;margin-bottom: 5px;">
+                        <a href="#">blue (1)</a>
+                      </li>
+                      <li style="border-top: 1px solid gray;margin-bottom: 5px;">
+                        <a href="#">green (1)</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- PRODUCT CATEGORIES -->
+                  <div class="fh-productCG" style="border-bottom: 1px solid gray; padding-bottom: 30px; padding: 10px 0px;">
+                    <h4 style="font-size: 20px;
+                    font-weight: 300;
+                    line-height: 20px;
+                    color: black;">Product Categories</h4>
+                    <ul style="list-style: square; color: #fff;" class="ul-product">
+                      <li style="padding: 5px; border-bottom: 1px solid #F0F0F0;">
+                        <a class="product-text" href="#">For her</a>
+                        <ul style="list-style: square;">
+                          <li>
+                            <a class="product-text" href="#">Accessories</a>
+                          </li>
+                          <li>
+                            <a class="product-text" href="#">Clothing</a>
+                          </li>
+                          <li>
+                            <a class="product-text"  href="#">Shoes</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li style="padding: 5px; border-bottom: 1px solid #F0F0F0;">
+                        <a class="product-text" href="#">For Him</a>
+                      </li>
+                      <li style="padding: 5px; padding-bottom: 10px;">
+                        <a class="product-text" href="#">Uncategorized</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- PRODUCT -->
+                  <div class="fh-product" style="margin-top: 30px;">
+                    <h4 style="font-size: 20px;
+                    font-weight: 300;
+                    line-height: 20px;
+                    color: black;">Product</h4>
+                    <ul style="border-bottom: 1px solid gray; float: left;padding: unset;">
+                      <li
+                        style="
+                          list-style: none;
+                          padding: 5px 0px;
+                          border-bottom: 1px solid gray;
+                        "
+                      >
+                        <a style="text-decoration: none" class="item-cart" href="#">
+                          <div style="display: flex; justify-content: space-between">
+                            <div class="cart-text">
+                              <p style="color: #A4916D; padding-top: 10px">Woo Album #1</p>
+                              <p style="color: gray">1 x 12.00£</p>
+                            </div>
+                            <img
+                              class="cart-img"
+                              src="./img/img_forher/home_store_product1-700x700.jpg"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                      </li>
+                      <li
+                        style="
+                          list-style: none;
+                          padding: 5px 0px;
+                          border-bottom: 1px solid gray;
+                        "
+                      >
+                        <a style="text-decoration: none" class="item-cart" href="#">
+                          <div style="display: flex; justify-content: space-between">
+                            <div class="cart-text">
+                              <p style="color: #A4916D; padding-top: 10px">Woo Logo</p>
+                              <p style="color: gray">1 x 12.00£</p>
+                            </div>
+                            <img
+                              class="cart-img"
+                              src="./img/img_forher/home_store_product14-700x700.jpg"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                      </li>
+                      <li
+                        style="
+                          list-style: none;
+                          padding: 5px 0px;
+                        "
+                      >
+                        <a style="text-decoration: none" class="item-cart" href="#">
+                          <div style="display: flex; justify-content: space-between">
+                            <div class="cart-text">
+                              <p style="color: #A4916D; padding-top: 10px">Woo Ninja</p>
+                              <p style="color: gray">1 x 12.00£</p>
+                              <div class="rate-star" style="font-size: 10px; color: #A4916D;">
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star "></span>
+                                <span class="fa fa-star"></span>
+                                <span style="color: #fff;" class="fa fa-star checked"></span>
+                              </div>
+                            </div>
+                            <img
+                              class="cart-img"
+                              src="./img/img_forher/home_store_product2-700x700.jpg"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- SEARCH PRODUCT -->
+                  <div class="fh-search">
+                    <h4 style="font-size: 20px;
+                    font-weight: 300;
+                    line-height: 20px;
+                    color: black;">Search Product</h4>
+                    <div class="input-group rounded">
+                      <input type="search" class="form-control rounded" placeholder="Search Product.." aria-label="Search" aria-describedby="search-addon" />
+                      <span class="input-group-text border-0" style="padding: unset;" id="search-addon">
+                      </span>
+                    </div>
+                  </div>
               </div>
-              <!-- SEARCH PRODUCT -->
-              <div class="fh-search">
-                <h4 style="font-size: 20px;
-                font-weight: 300;
-                line-height: 20px;
-                color: black;">Search Product</h4>
-                <div class="input-group rounded">
-                  <input type="search" class="form-control rounded" placeholder="Search Product.." aria-label="Search" aria-describedby="search-addon" />
-                  <span class="input-group-text border-0" style="padding: unset;" id="search-addon">
-                  </span>
-                </div>
-              </div>
+            </div>
           </div>
-        </div>
       </div>
-  </div>
-</div>
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>

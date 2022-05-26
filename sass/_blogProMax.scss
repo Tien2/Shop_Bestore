@@ -1,7 +1,5 @@
 @import "./variable";
 .blitem {
-  // border: 1px solid black;
-  padding: 10px 0px 20px 0px;
   .bl-a {
     position: relative;
   }
@@ -55,46 +53,43 @@
   opacity: 1;
   transform: scale(1);
 }
-.blog-item-content {
-  .blog-item-content-name {
-    overflow: hidden;
-    height: 50px;
-    margin-bottom: 10px;
-    padding: 10px 20px 20px 20px;
-    h3 {
-      margin: unset;
-      text-align: center;
+// CSS TEXT IMG
+.post-desc {
+  padding: 20px;
+  .post-title {
+    a {
+      color: black;
+      font-size: 23px;
       font-weight: 200;
-      font-size: 25px;
     }
   }
-  .blog-item-content-text {
-    padding: 0px 20px;
-    overflow: auto;
-    height: 150px;
-    .content-text {
-      font-size: 15px;
+  .post-excerpt {
+    p {
+      font-size: 16px;
       color: gray;
+      margin: unset;
     }
-    margin: 0px 0px 20px 0px;
   }
-  .blog-item-reaction {
-    position: relative;
-    height: 44px;
-    background: #fafafa;
-    .blog-item-reaction-pro {
-      position: absolute;
-      display: flex;
-      left: 50%;
-      bottom: 8px;
-      .blog-icon-reaction {
-        .post-comments {
-          padding: 0px 10px;
-          text-decoration: none;
-          color: $colorText;
-          &:hover {
-            text-decoration: underline;
-          }
+}
+.post-footer {
+  background: #fafafa;
+  height: 44px;
+  .post-links {
+    margin: unset;
+    display: flex;
+    list-style: none;
+    float: right;
+    padding: unset;
+    padding-top: 13px;
+    .pl-a {
+      padding: 0px 5px;
+      a {
+        color: #deb887;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 400;
+        &:hover {
+          text-decoration: underline;
         }
       }
     }

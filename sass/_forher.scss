@@ -358,12 +358,33 @@ input[type="range"]::-webkit-slider-thumb {
       list-style: none;
       border-bottom: 1px solid gray;
       padding: unset;
-      padding-bottom: 30px;
       li {
-        margin-bottom: 5px;
+        display: flex;
         a {
           text-decoration: none;
           color: #a4916d;
+          font-weight: 300;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        p {
+          color: gray;
+          margin: unset;
+        }
+      }
+    }
+  }
+  .fh-product-categories {
+    background: #a4916d;
+    ul {
+      list-style-type: square;
+      color: #fff;
+      li {
+        a {
+          color: #fff;
+          font-weight: 200;
+          text-decoration: none;
           &:hover {
             text-decoration: underline;
           }
